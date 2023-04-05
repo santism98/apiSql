@@ -28,16 +28,16 @@ CREATE TABLE entries (
 
 INSERT INTO authors(name,surname,email,image)
 VALUES
-('ana','anacleta','ana@correo.es','https://randomuser.me/api/portraits/thumb/women/75.jpg'),
-('maria','marieta','maria@correo.es','https://randomuser.me/api/portraits/thumb/women/60.jpg'),
-('juan','juanito','juan@correo.es','https://randomuser.me/api/portraits/thumb/men/45.jpg'),
-('pepe','pepin','pepe@correo.es','https://randomuser.me/api/portraits/thumb/men/72.jpg');
+('Luis','Luisito','luis@correo.es','https://randomuser.me/api/portraits/thumb/men/22.jpg'),
+('Ana','Anita','ana@correo.es','https://randomuser.me/api/portraits/thumb/women/45.jpg'),
+('Pedro','Pedrito','pedro@correo.es','https://randomuser.me/api/portraits/thumb/men/33.jpg'),
+('Maria','Mariela','maria@correo.es','https://randomuser.me/api/portraits/thumb/women/56.jpg');
 
 --DATOS PRUEBA ENTRIES
 INSERT INTO entries(title,content,id_author,category)
-VALUES 
-('Noticia: SOL en Madrid','Contenido noticia 1',(SELECT id_author FROM authors WHERE email='ana@correo.es'),'Tiempo'),
-('Noticia: Un panda suelto por la ciudad','El panda se comió todas las frutas de una tienda',(SELECT id_author FROM authors WHERE email='maria@correo.es'),'Sucesos'),
-('El rayo gana la champions','Victoria por goleada en la final de la champions',(SELECT id_author FROM authors WHERE email='pepe@correo.es'),'Deportes'),
-('Amanece Madrid lleno de arena','La calima satura Madrid de arena. Pérdidas millonarias',(SELECT id_author FROM authors WHERE email='maria@correo.es'),'Sucesos'),
-('Descubren el motor de agua','Fin de la gasolina. A partir de ahora usaremos agua en nuestros coches',(SELECT id_author FROM authors WHERE email='juan@correo.es'),'Ciencia');
+VALUES
+('Noticia: Nueva especie de árbol descubierta','Contenido noticia 1',(SELECT id_author FROM authors WHERE email='luis@correo.es'),'Ciencia'),
+('Noticia: Concierto en el estadio de futbol','El grupo musical más popular dará un concierto en el estadio de futbol',(SELECT id_author FROM authors WHERE email='ana@correo.es'),'Musica'),
+('La lluvia de estrellas ilumina la noche','La lluvia de estrellas más grande de la historia se pudo ver en todo el mundo',(SELECT id_author FROM authors WHERE email='pedro@correo.es'),'Ciencia'),
+('Un nuevo robot que cambia el mundo','El robot más avanzado que se ha creado hasta ahora',(SELECT id_author FROM authors WHERE email='maria@correo.es'),'Tecnologia'),
+('El fenómeno paranormal en la casa encantada','Los fantasmas aparecen cada noche en la casa encantada',(SELECT id_author FROM authors WHERE email='pero@correo.es'),'Sucesos');

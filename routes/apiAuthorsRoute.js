@@ -4,7 +4,7 @@ const {createAuthors,deleteAuthors,getAuthors,updateAuthors} = require('../contr
 
 // Rutas para los autores
 router.get('/authors', getAuthors);
-router.get('/authors/:email', getAuthByEmail);
+//router.get('/authors/:email', getAuthByEmail);
 router.post('/authors', createAuthors);
 router.put('/authors/:id', updateAuthors);
 router.delete('/authors/:id', deleteAuthors);

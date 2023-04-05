@@ -20,7 +20,7 @@ const getEntries = async (req, res) => {
 }
 
 
-const createEntries = async (req, res) => {
+const createEntry = async (req, res) => {
     let data;
     const body = req.body
     try {
@@ -61,4 +61,4 @@ const deleteEntries = async (req, res) => {
     }
 }
 
-module.exports = { getEntries, createEntries, updateEntries, deleteEntries }
+module.exports = { getEntries, createEntry, updateEntries, deleteEntries }

@@ -24,7 +24,7 @@ const getAllEntries = async () => {
     return result;
 };
 
-const geTEntriesByEmail = async (email) => {
+const getEntriesByEmail = async (email) => {
     let client, result;
     try {
         client = await pool.connect();
@@ -117,7 +117,7 @@ return  { status: 200, message: 'La entrada se ha actualizado correctamente.' },
 
 
 module.exports={
-    geTEntriesByEmail,
+    getEntriesByEmail,
     getAllEntries,
     createEntries,
     updateEntry,

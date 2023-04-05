@@ -16,7 +16,7 @@ const getAuthors = async (req, res) => {
     } catch (error) {
         res.status(500).json({ ok: false, msg: "error getting authors" })
     }
-
+ 
 }
 const createAuthors = async (req, res) => {
     let data;
